@@ -1,0 +1,462 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+    ::selection {
+        background: #000;
+        color: #fff;
+    }
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #D8D8D8;
+
+    .countainerHeaderTop {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #F5F5F5;
+        justify-content: center;
+        align-items: center;
+
+        .headerTop {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+
+            .iconsTop {
+                display: flex;
+                gap: 15px;
+                color: rgb(136, 136, 136);
+            }
+
+            .descTop {
+                p {
+                    color: rgb(136, 136, 136);
+                }
+            }
+
+            .contactMail {
+                display: flex;
+                color: rgb(136, 136, 136);
+                gap: 10px;
+            }
+        }
+
+    }
+
+    .headerCountainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .headermain {
+            display: flex;
+            padding-top: 20px;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+
+        }
+
+        .navHeader {
+            display: flex;
+            justify-content: space-between;
+
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                gap: 35px;
+                font-size: 13PX;
+
+                .fa-bars {
+                    display: none;
+                }
+
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(51, 51, 51);
+                font-weight: 500;
+                font-family: "Montserrat";
+                font-size: 16px;
+
+
+            }
+
+            .one {
+                color: #FE8200;
+            }
+
+        }
+
+        .iconss {
+            display: flex;
+            gap: 20px;
+            color: rgb(136, 136, 136);
+        }
+    }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+    header {
+        .countainerHeaderTop {
+            display: none;
+        }
+
+        .headerCountainer {
+            .navHeader {
+
+                ul {
+                    li {
+                        display: none;
+                    }
+
+                    .fa-bars {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#hero {
+
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../../assets/image/master-slide-03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .containerHero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            font-family: "Montserrat";
+            font-size: 18px;
+            color: white;
+
+        }
+
+        h1 {
+            font-family: "Poppins";
+            font-size: 60px;
+            color: white;
+
+        }
+
+        button {
+            font-family: "Montserrat";
+            font-size: 18px;
+            padding: 10px;
+            width: 150px;
+            border: none;
+            transition: 0.6s;
+            border-radius: 100px;
+
+            &:hover {
+                background-color: orangered;
+                color: white;
+                transition: 0.6s;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+    #hero {
+        max-width: 100%;
+    }
+}
+
+#images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .containerImages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        gap: 20px;
+
+    }
+
+
+    .imageOne {
+        width: 100%;
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.5s;
+                transform-origin: center;
+            }
+        }
+
+        .buttonOne {
+            button {
+                background-color: #ffffff;
+                color: rgb(28, 28, 28);
+                border: none;
+                font-family: "Montserrat";
+                font-size: 17px;
+                padding: 10px;
+                width: 120px;
+            }
+
+            position: absolute;
+
+        }
+
+        .sung {
+            position: relative;
+            bottom: 70px;
+            background-color: #ffffff;
+            color: rgb(48, 48, 48);
+            border: none;
+            font-family: "Montserrat";
+            font-size: 17px;
+            padding: 10px;
+        }
+    }
+
+    .imageTwo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+
+
+        img {
+            width: 100%;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.5s;
+                transform-origin: center;
+            }
+        }
+
+        .buttonTwo {
+            bottom: 20px;
+            position: absolute;
+
+            button {
+                background-color: #ffffff;
+                color: rgb(28, 28, 28);
+                border: none;
+                font-family: "Montserrat";
+                font-size: 17px;
+                padding: 10px;
+                width: 160px;
+            }
+        }
+
+        .watch {
+            top: 270px;
+            position: absolute;
+            background-color: #ffffff;
+            color: rgb(28, 28, 28);
+            border: none;
+            font-family: "Montserrat";
+            font-size: 17px;
+            padding: 10px;
+            width: 120px;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.5s;
+                transform-origin: center;
+            }
+        }
+    }
+
+    .imageThree {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+
+        .bag {
+            position: absolute;
+            background-color: #ffffff;
+            color: rgb(28, 28, 28);
+            border: none;
+            font-family: "Montserrat";
+            font-size: 17px;
+            padding: 10px;
+            width: 120px;
+
+        }
+
+        img {
+            width: 100%;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.5s;
+                transform-origin: center;
+            }
+        }
+
+        .buttonThree {
+            bottom: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column;
+            text-align: center;
+            width: 220px;
+            font-family: "Montserrat";
+            position: absolute;
+
+            button {
+                background-color: #000;
+                color: white;
+                padding: 10px;
+                width: 120px;
+                border-radius: 100px;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+    #images {
+        .containerImages {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+#newproduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .countainerNewpro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+
+        .products {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            background-color: #ffffff;
+            flex-wrap: wrap;
+
+            .object {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+
+                &:hover {
+                    img {
+                        filter: brightness(80%);
+                        transition: filter 0.3s ease;
+                    }
+
+                    button {
+                        display: block;
+                    }
+
+                }
+
+                img {
+                    transition: filter 0.3s ease;
+                    width: 100%;
+                    height: auto;
+
+
+                }
+
+                button {
+                    bottom: 90px;
+                    left: 60px;
+                    padding: 7px;
+                    background-color: #000;
+                    color: #F5F5F5;
+                    border-radius: 100px;
+                    font-size: 12px;
+                    transition: 0.3s ease;
+                    position: absolute;
+                    display: none;
+
+                    &:hover {
+                        background-color: #ff5900;
+                        transition: 0.3s ease;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
